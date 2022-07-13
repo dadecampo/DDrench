@@ -17,6 +17,7 @@ namespace Assets.Scripts.ColorsManager {
         void OnMouseDown()
         {
             ColorsManager.Instance.SelectedColor = _color;
+            MatrixManager.GameManager.Instance.PlayWithColor(_color);
         }
     }
 }
